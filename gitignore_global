@@ -1,0 +1,14 @@
+
+#Vim temporary files
+.*.swp
+
+# erlang temporary files
+deps
+*.o
+*.beam
+*.plt
+erl_crash.dump
+ebin/*.beam
+rel/example_project
+.concrete/DEV_MODE
+.rebar
