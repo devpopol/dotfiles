@@ -7,6 +7,7 @@ git-globals:
 
 vim-config:
 	ln -nfs `pwd`/vimrc ~/.vimrc || true
+	ln -nfs `pwd`/vim ~/.vim || true
 
 tmux-config:
 	ln -nfs `pwd`/tmux.conf ~/.tmux.conf || true

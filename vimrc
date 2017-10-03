@@ -39,7 +39,8 @@ vnoremap <F1> <ESC>
 nnoremap ; :
 
 syntax enable
-colorscheme matrix
+set background=dark
+colorscheme solarized
 
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2
