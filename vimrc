@@ -3,10 +3,13 @@ call pathogen#infect()
 filetype plugin indent on
 set nocompatible
 set modelines=0
-set relativenumber
+"set relativenumber
 set hidden
 
+" bind the leader to comma
 let mapleader = ","
+
+"search stuff
 nnoremap / /\v
 vnoremap / /\v
 set ignorecase
@@ -39,13 +42,22 @@ vnoremap <F1> <ESC>
 nnoremap ; :
 
 syntax enable
-set background=dark
+" set background=dark
 colorscheme molokai
 
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType html setlocal expandtab shiftwidth=2 tabstop=2
-autocmd FileType typescript setlocal expandtab shiftwidth=2 tabstop=2
+" autocmd FileType typescript setlocal expandtab shiftwidth=2 tabstop=2
+autocmd FileType haskell setlocal expandtab shiftwidth=2 tabstop=2
 
 autocmd BufWritePre * s/\s\+$//e
 
+" Command-T options
+set wildignore+=*.o,*.obj,**/.git/*,**/.svn/*,**/node_modules/**,node_modules/**,.git/*,svn/*
+
+
+let g:CommandTTraverseSCM = 'pwd'
+" let g:typescript_indent_disable = 1
+"
+let g:typescript_indent_disable = 1
