@@ -39,7 +39,7 @@ inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
-nnoremap ; :
+" nnoremap ; :
 
 syntax enable
 " set background=dark
@@ -63,3 +63,11 @@ autocmd BufWritePre * s/\s\+$//e
 let g:typescript_indent_disable = 1
 set rtp+=/usr/local/opt/fzf
 colorscheme solarized
+
+" ------------------------------------------------------
+"  fzf
+" ------------------------------------------------------
+nmap ; :Buffers<CR>
+nmap <Leader>t :Files<CR>
+nmap <Leader>r :Tags<CR>
+
