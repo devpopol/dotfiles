@@ -61,3 +61,4 @@ let g:CommandTTraverseSCM = 'pwd'
 " let g:typescript_indent_disable = 1
 "
 let g:typescript_indent_disable = 1
+set rtp+=/usr/local/opt/fzf

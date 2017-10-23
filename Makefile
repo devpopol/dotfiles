@@ -1,5 +1,5 @@
 
-all: vim-config tmux-config helpers git-globals
+all: fzf vim-config tmux-config helpers git-globals
 
 git-globals:
 	git config --global core.excludesfile ~/dotfiles/gitignore_global
@@ -15,6 +15,9 @@ tmux-config:
 tools:
 	which awk || brew install awk
 	which tmux || brew install tmux
+
+fzf:
+	brew install fzf
 
 helpers: tools
 	>> ~/.bash_profile
