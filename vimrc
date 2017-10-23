@@ -71,3 +71,8 @@ nmap ; :Buffers<CR>
 nmap <Leader>t :Files<CR>
 nmap <Leader>r :Tags<CR>
 
+" ------------------------------------------------------
+" the_silver_searcher
+" ------------------------------------------------------
+
+let g:ackprg = 'ag --nogroup --nocolor --column'

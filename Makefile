@@ -16,6 +16,7 @@ tools:
 	which awk || brew install awk
 	which tmux || brew install tmux
 	which fzf || brew install fzf && /usr/local/opt/fzf/install
+	brew install the_silver_searcher
 
 helpers: tools
 	>> ~/.bash_profile
