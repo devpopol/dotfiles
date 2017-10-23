@@ -43,7 +43,7 @@ nnoremap ; :
 
 syntax enable
 " set background=dark
-colorscheme molokai
+" colorscheme molokai
 
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2
@@ -54,11 +54,12 @@ autocmd FileType haskell setlocal expandtab shiftwidth=2 tabstop=2
 autocmd BufWritePre * s/\s\+$//e
 
 " Command-T options
-set wildignore+=*.o,*.obj,**/.git/*,**/.svn/*,**/node_modules/**,node_modules/**,.git/*,svn/*
+" set wildignore+=*.o,*.obj,**/.git/*,**/.svn/*,**/node_modules/**,node_modules/**,.git/*,svn/*
 
 
-let g:CommandTTraverseSCM = 'pwd'
+" let g:CommandTTraverseSCM = 'pwd'
 " let g:typescript_indent_disable = 1
 "
 let g:typescript_indent_disable = 1
 set rtp+=/usr/local/opt/fzf
+colorscheme solarized
