@@ -11,6 +11,7 @@ vim-config:
 
 tmux-config:
 	ln -nfs `pwd`/tmux.conf ~/.tmux.conf || true
+	ln -nfs `pwd`/tmux ~/.tmux || true
 
 tools:
 	which awk || brew install awk

@@ -1,5 +1,6 @@
 
 call pathogen#infect()
+syntax on
 filetype plugin indent on
 set nocompatible
 set modelines=0
@@ -41,7 +42,7 @@ vnoremap <F1> <ESC>
 
 " nnoremap ; :
 
-syntax enable
+" syntax enable
 " set background=dark
 " colorscheme molokai
 
@@ -62,7 +63,7 @@ autocmd BufWritePre * s/\s\+$//e
 "
 let g:typescript_indent_disable = 1
 set rtp+=/usr/local/opt/fzf
-colorscheme solarized
+" colorscheme solarized
 
 " ------------------------------------------------------
 "  fzf
