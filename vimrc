@@ -80,3 +80,6 @@ nmap <Leader>r :Tags<CR>
 " ------------------------------------------------------
 
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" vim-terraform
+let g:terraform_align=1
