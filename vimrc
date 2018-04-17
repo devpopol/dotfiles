@@ -27,7 +27,7 @@ vnoremap <tab> %
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>
-nnoremap <left> <nop> 
+nnoremap <left> <nop>
 nnoremap <right> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
@@ -55,7 +55,7 @@ autocmd FileType html setlocal expandtab shiftwidth=2 tabstop=2
 " autocmd FileType typescript setlocal expandtab shiftwidth=2 tabstop=2
 autocmd FileType haskell setlocal expandtab shiftwidth=2 tabstop=2
 
-autocmd BufWritePre * s/\s\+$//e
+autocmd BufWritePre * %s/\s\+$//e
 
 " Command-T options
 " set wildignore+=*.o,*.obj,**/.git/*,**/.svn/*,**/node_modules/**,node_modules/**,.git/*,svn/*
@@ -83,3 +83,5 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " vim-terraform
 let g:terraform_align=1
+
+map <C-n> :NERDTreeToggle<CR>
